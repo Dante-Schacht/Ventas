@@ -15,7 +15,7 @@ public class Venta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String producto;
     private LocalDate fecha;
     private Double montoTotal;
     private Long idVendedor;

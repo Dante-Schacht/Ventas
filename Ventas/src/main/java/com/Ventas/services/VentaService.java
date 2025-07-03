@@ -48,10 +48,10 @@ public class VentaService {
     }
 
     private VentaDTO toDTO(Venta venta) {
-        return new VentaDTO(venta.getId(), venta.getFecha(), venta.getMontoTotal(), venta.getIdVendedor());
+        return new VentaDTO(venta.getId(), venta.getFecha(), venta.getProducto(), venta.getMontoTotal(), venta.getIdVendedor());
     }
 
     private Venta toEntity(VentaDTO dto) {
-        return new Venta(dto.getId(), dto.getFecha(), dto.getMontoTotal(), dto.getIdVendedor());
+        return new Venta(dto.getId(), dto.getProducto(), dto.getFecha(), dto.getMontoTotal(), dto.getIdVendedor());
     }
 }
